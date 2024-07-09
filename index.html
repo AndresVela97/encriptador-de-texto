@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Icono de Exclamación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <style>
+        /* Estilos adicionales si los necesitas */
+    </style>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="assets/Logo.png" alt="Logo Alura" />
+    </header>
+    <main class="container">
+      <textarea
+        id="inputText"
+        rows="4"
+        cols="50"
+        placeholder="Ingrese el texto aquí"
+      ></textarea>
+      <p class="nota" id="nota"><i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos</p>
+      <div class="buttons">
+        <button onclick="encriptar()" class="encrypt-btn">Encriptar</button>
+        <button onclick="desencriptar()" class="decrypt-btn">
+          Desencriptar
+        </button>
+      </div>
+      <div class="placeholder">
+        <div class="placeholder_image" id="placeholder_image">
+          <img src="assets/Muñeco.png" alt="Ningún mensaje fue encontrado" />
+          <p class="no-message">Ningún mensaje fue encontrado</p>
+          <p class="p-message">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        <textarea
+          id="outputText"
+          class="placeholder-textarea"
+          style="display: none"
+        ></textarea>
+        <div class="output-section" id="output-section">
+          <button
+            id="copiar"
+            onclick="copiarAlPortapapeles()"
+            class="copy-btn"
+            style="display: none"
+          >
+            Copiar
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <footer class="footer">
+      Desarrollado por Edwin Andres Vela Yate Año 2024
+    </footer>
+  </body>
+</html>
